@@ -119,8 +119,53 @@ background-color: rgb(34, 34, 114);
     text-align: center;
 
 }
+/*left-hide*/
+.left-hide.show {
+    top: 0;
+    position: absolute;
+    
+} 
+ /*education*/
+ .education{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 2rem;
+    border-radius: 10px;
+    height: 180px;
 
-
+  }
+  .edu{
+    padding: 2.5rem 0rem 0rem 2rem;
+  }
+  .edu-2{
+    margin: .5rem;
+  }
+.left-hide.show .education{
+    margin: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    position: relative; 
+}
+.left-hide.show .education .edu-2{
+    text-align: start;
+    margin-left: 2rem;
+}
+.left-hide.show .education .edu{
+    padding: 0;
+}
+.left-hide.show .back-left{
+    position: absolute;
+    top: 1rem;
+    right: .7rem;
+    padding: 0.5rem 1rem;
+    border-radius: 100%;
+    border: 1px solid rgb(159, 209, 250);
+    
+}
+.left-hide.show .back-left:hover{
+    font-weight: 700;
+    font-size: 20px;
+}
 /*about slide box*/
 
 .skill{
@@ -128,6 +173,12 @@ background-color: rgb(34, 34, 114);
     margin: 1rem;
     position: relative;
 
+}
+.skill .topic-skill{
+    border-bottom:2px #3d3c3c solid;
+    border-right:1px #3d3c3c solid;
+    max-width: 60%;
+    padding-left: 2rem;
 }
 .box-skill{
     height: 200px;
@@ -180,7 +231,7 @@ background-color: rgb(34, 34, 114);
     animation-name: fade;
     animation-duration: 1.5s;
   }
-  
+ 
   @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
@@ -213,4 +264,67 @@ background-color: rgb(34, 34, 114);
     to {
         transform: translateX(0);
     }
+}
+
+@media screen and (max-width: 900px) {
+    .tran{
+        display: grid;
+        grid-template-columns:50% 50% ;
+        justify-content:space-around;
+        align-items: center;
+        height:100vh ;
+        width:100% ;
+        overflow: hidden;
+        position: relative;
+        background-image:linear-gradient(white ,rgb(0, 140, 255) ); 
+    }
+    .contact{
+        position: relative;
+        margin: 1rem;
+
+    }
+    .contact a{
+        margin: 1rem;
+        position: absolute;
+        top: 4rem;
+        right: 2rem;
+    }
+}
+@media screen and (max-width: 690px) {
+    .top{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 45vh;
+        width: 95%;
+        border-radius: 10px;
+        background-color: #2e449c;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: relative;
+    }
+    .contact{
+        position: relative;
+        margin: 2rem;
+
+    }
+    .contact a{
+        margin: 1rem;
+        position: absolute;
+        top: 2.5rem;
+        left: 0rem;
+    }
+    .tran{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns:1fr;
+        align-items: center;
+        width:100% ;
+        height: 160vh;
+        position: relative;
+        background-image:linear-gradient(white ,rgb(0, 140, 255) );
+        
+        
+        
+    }
+    
+    
 }
