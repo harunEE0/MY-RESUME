@@ -1,0 +1,216 @@
+*{box-sizing: border-box;
+margin: 0;
+font-family: Serif;}
+
+.top{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 10rem;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: #2e449c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box-top-left{
+    display: flex;
+    
+   
+    align-items: center;
+}
+.box-1{
+    background-color: #717171;
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 2rem;
+    
+}
+.box-1 h1:hover{
+    color: aliceblue;
+}
+.box-1:hover{
+    background-color:#3d3c3c ;
+} 
+.box-2{
+    
+    margin-left: 3rem;
+}
+.contact{
+    margin-top:1.2rem;
+    
+}
+.contact  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    text-decoration: none;
+    color: rgb(11, 11, 58);
+    background-color: blue;
+    border-radius: 100%;
+}
+.contact a:hover {
+color: aliceblue;
+background-color: rgb(34, 34, 114); 
+}
+
+/*main content*/
+.tran{
+    display: grid;
+    grid-template-columns:30% 35% 30%;
+    justify-content:space-around;
+    align-items: center;
+    height:100vh ;
+    width:100% ;
+    overflow: hidden;
+    position: relative;
+    background-image:linear-gradient(white ,rgb(0, 140, 255) );
+    
+    
+    
+}
+.box{
+    border-radius: 10px;
+    height: 95%;
+    position: relative;
+    margin: 1rem;
+    color: black;
+    animation: slideIntobox 0.5s ease forwards;
+    padding: 2rem;
+    background-image:linear-gradient(white ,rgb(188, 221, 248) );
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+   
+}
+
+.left-hide.show{
+    animation: slideInFromLeft 0.5s ease forwards;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.left-but,.right-but{
+    margin-top: 5rem;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: .7rem;
+   }
+.left-but:hover{color: #05091a; background-color: rgb(0, 140, 255); font-size: 30px;}
+.right-but:hover{color: #05091a; background-color: rgb(0, 140, 255); font-size: 30px;}
+.right-hide.show{
+    animation: slideInFromRight 0.5s ease forwards;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+/*about slide box*/
+
+.skill{
+    
+    margin: 1rem;
+    position: relative;
+
+}
+.box-skill{
+    height: 200px;
+    width: 100%;
+    display: none;
+}
+.box-skill h2{
+    margin-left: 1.5rem;
+}
+.box-skill ul{
+    margin-left: 1.5rem;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(36, 32, 32);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+@keyframes slideIntobox {
+    from {
+        transform: translateX(-500%);
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
