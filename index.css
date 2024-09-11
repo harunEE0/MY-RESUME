@@ -329,7 +329,7 @@ background-color: rgb(34, 34, 114);
     
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 400px) {
     .top{
         display: grid;
         grid-template-columns: 1fr;
@@ -375,7 +375,6 @@ background-color: rgb(34, 34, 114);
         overflow: hidden;
         position: absolute;
         padding: 0;
-        border: 1px solid red;
         
         
     }
