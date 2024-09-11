@@ -41,7 +41,8 @@ font-family: Serif;}
     margin-left: 3rem;
 }
 .contact{
-    margin-top:1.2rem;
+    margin-top:1.5rem;
+    
     
 }
 .contact  a {
@@ -54,6 +55,7 @@ font-family: Serif;}
     color: rgb(11, 11, 58);
     background-color: blue;
     border-radius: 100%;
+    margin-top: 1rem;
 }
 .contact a:hover {
 color: aliceblue;
@@ -269,10 +271,10 @@ background-color: rgb(34, 34, 114);
 @media screen and (max-width: 900px) {
     .tran{
         display: grid;
-        grid-template-columns:50% 50% ;
+        grid-template-columns:100%  ;
         justify-content:space-around;
         align-items: center;
-        height:100vh ;
+        height:16   0vh ;
         width:100% ;
         overflow: hidden;
         position: relative;
@@ -329,7 +331,121 @@ background-color: rgb(34, 34, 114);
     
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+    .top{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 45vh;
+        width: 95%;
+        border-radius: 10px;
+        background-color: #2e449c;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: relative;
+    }
+    .contact{
+        position: relative;
+        margin: 2rem;
+
+    }
+    .contact a{
+        margin: 1rem;
+        position: absolute;
+        top: 2rem;
+        left: 0rem;
+    }
+    .box-2 h1{
+        font-size: medium;
+    }
+    .contact h2{
+        font-size: 15px;
+    }
+    .tran{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns:1fr;
+        align-items: center;
+        width:100% ;
+        height: 160vh;
+        position: relative;
+        background-image:linear-gradient(white ,rgb(0, 140, 255) );
+        
+        
+        
+    }
+    .left-hide.show{
+        box-sizing: border-box;
+        overflow: hidden;
+        position: absolute;
+        padding: 0;
+        
+        
+    }
+    .left-hide.show .education{
+            display: grid;
+            grid-template-columns: 100%;
+            height: 39vh;
+            width: 90%;
+            margin-top: 2.5rem;
+            margin-left: auto;
+            margin-right: auto;
+    }
+    .left-hide.show .education .edu {
+        position: absolute;
+        top: 1rem;
+        left: 1.4rem;
+    }
+    .left-hide.show .education .edu-2{
+        margin: 2rem;
+        overflow: hidden;
+       
+        
+    }
+    .left-hide.show .education .edu-2 p,h2{
+        font-size: 18px;
+        margin-top: .5rem;
+        
+    }
+    .left-hide.show .back-left{
+        position: absolute;
+        top: .5rem;
+        right: 0.5rem;
+        
+    
+    }
+     /*main content*/
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(36, 32, 32);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .dot{
+    display: none;
+  }
+  .skill .topic-skill{
+    border-bottom:2px #3d3c3c solid;
+    border-right:1px #3d3c3c solid;
+    max-width: 80%;
+    padding-left: 2rem;
+  }
+  .box-skill h2 {
+    font-size: 15px;
+    margin-bottom: .5rem;
+  }
+}
+@media screen and (max-width: 350px) {
     .top{
         display: grid;
         grid-template-columns: 1fr;
