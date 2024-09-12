@@ -85,7 +85,7 @@ background-color: rgb(34, 34, 114);
     color: black;
     animation: slideIntobox 0.5s ease forwards;
     padding: 2rem;
-    background-image:linear-gradient(white ,rgb(188, 221, 248) );
+    background-color: aliceblue;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
@@ -105,12 +105,21 @@ background-color: rgb(34, 34, 114);
     width: 100%;
    
 }
+.left-hide.show .education{
+    
+    background-color: aliceblue;
+}
 .left-but,.right-but{
+    position: absolute;
     margin-top: 5rem;
     font-size: 20px;
-    font-weight: 600;
+    border:aliceblue ;
     border-radius: 10px;
     padding: .7rem;
+    bottom: 2.5rem;
+   }
+   .right-but{
+    right: 3rem;
    }
 .left-but:hover{color: #05091a; background-color: rgb(0, 140, 255); font-size: 30px;}
 .right-but:hover{color: #05091a; background-color: rgb(0, 140, 255); font-size: 30px;}
@@ -464,7 +473,7 @@ background-color: rgb(34, 34, 114);
     .contact a{
         margin: 1rem;
         position: absolute;
-        top: 2rem;
+        top: 2.5rem;
         left: 0rem;
     }
     .box-2 h1{
